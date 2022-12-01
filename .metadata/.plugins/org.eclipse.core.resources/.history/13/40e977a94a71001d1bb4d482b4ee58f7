@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Lab401 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Full Name: ");
+		String name = scan.next();
+		if(name.indexOf(' ')==-1) {
+			System.out.println("Incorrect Name");
+		}
+		else{
+			String firstName = name.substring(0,name.indexOf(' '));
+			String lastName = name.substring(name.indexOf(' ')+1);
+			System.out.println(firstName);
+			System.out.println("");
+		}
+
+	}
+
+}

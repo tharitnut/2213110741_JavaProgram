@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Lab401 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Full Name: ");
+		String fullName = scan.next();
+		boolean space = fullName.indexOf(' ')==-1;
+		int spaceAt = fullName.indexOf(' ');
+		if(space=true) {
+			System.out.println("Incorrect Name");
+		}
+		else{
+			String firstName = fullName.substring(0,spaceAt);
+			String lastName = fullName.substring(spaceAt+1);
+			System.out.println("First Name: "+firstName.toUpperCase());
+			System.out.println("Last Name: "+lastName.toLowerCase());
+		}
+
+	}
+
+}
