@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Lab504 {
+	static String fullname;
+	static String middlename;
+	static String lastname;
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Please enter your name, sseparated by a space.\n:");
+		fullname = scan.nextLine();
+		int space = fullname.indexOf(' ');
+		String firstname = fullname.substring(0,space);
+		String notfirstname = fullname.substring(space+1);
+		System.out.println(firstname+"\n"+notfirstname);
+		//System.out.println(abbreviatName());
+
+	}
+	
+	public static String abbreviatName(String fullname) {
+		
+	}
+
+}

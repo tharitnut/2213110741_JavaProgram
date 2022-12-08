@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Lab404 /*{
+public class Lab404 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -15,4 +15,4 @@ public class Lab404 /*{
 
 	}
 
-}*/
+}

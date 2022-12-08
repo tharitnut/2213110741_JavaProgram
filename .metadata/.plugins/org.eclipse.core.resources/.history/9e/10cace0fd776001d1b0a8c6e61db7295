@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Lab505 {
+
+	public static void main(String[] args) {
+		inputStudent();
+
+	}
+
+	public static void inputStudent() {
+		//กูอยากกลับหอ
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter Student Id: ");
+		String studentId = scan.next();
+		System.out.print("Enter Sublect Id: ");
+		String subjecttId = scan.next();
+		while(!isLength(studentId, subjecttId)) {
+			System.out.print("Enter Student Id: ");
+			studentId = scan.next();
+			System.out.print("Enter Sublect Id: ");
+			subjecttId = scan.next();
+		}
+		
+	}
+	
+	public static boolean isLength(String studentId,String subjectId) {
+		if(studentId.length()==10&&subjectId.length()==7) {
+			return true;
+		}
+		else return false;
+	}
+}
