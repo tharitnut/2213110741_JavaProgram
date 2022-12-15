@@ -1,0 +1,5 @@
+Date : 15-12-2022
+StudentID: 2213110741
+FullName: Tharit Ruangphungluang
+AKA : tharitnut
+ClassDetail : Array in Java
