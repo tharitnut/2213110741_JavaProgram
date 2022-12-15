@@ -1,0 +1,22 @@
+import javax.swing.*;
+
+public class Lab606 {
+
+	public static void main(String[] args) {
+		int[] nums = {25, 78, 41, 22, 36, 85, 37};
+		int inputArray;
+		do {
+			inputArray = Integer.parseInt(JOptionPane.showInputDialog("Input index of array:"));
+		}while(checkIndex(nums,inputArray));
+		
+
+	}
+	
+	public static boolean checkIndex(int[] num,int index) {
+		if((index<0)||(index>num.length-1))
+			return true;
+		else
+			return false;
+	}
+
+}

@@ -1,0 +1,28 @@
+import javax.swing.*;
+
+public class Lab606 {
+
+	public static void main(String[] args) {
+		int[] nums = {25, 78, 41, 22, 36, 85, 37};
+		int inputIndex = Integer.parseInt(JOptionPane.showInputDialog("Input index of array:"));
+		while(checkIndex(nums,inputIndex)) {
+			inputIndex = Integer.parseInt(JOptionPane.showInputDialog("Input index of array,again:"));
+		}
+		JOptionPane.showMessageDialog(null, "Current data, num["+inputIndex+"] is "+currentData(nums,inputIndex));
+
+	}
+	
+	public static boolean checkIndex(int[] nums,int index) {
+		if((index<0)||(index>nums.length-1))
+			return true;
+		else
+			return false;
+	}
+	
+	public static int currentData(int[] nums,int index) {
+		return nums[index];
+	}
+	
+	
+
+}
