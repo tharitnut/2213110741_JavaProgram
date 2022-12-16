@@ -12,7 +12,7 @@ public class Lab606 {
 		JOptionPane.showMessageDialog(null,
 				"Current data, num["+inputIndex+"] is "+currentData(nums,inputIndex)+"\n"+
 				(inputIndex!=0
-				?"Previous data, nums["+(inputIndex+1)+"] is "+prevData(nums, inputIndex)
+				?"Previous data, nums["+(inputIndex-1)+"] is "+prevData(nums, inputIndex)
 				:"No previous data")+
 				"\n"+
 				(inputIndex!=nums.length-1
