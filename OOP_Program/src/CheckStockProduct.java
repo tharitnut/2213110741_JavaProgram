@@ -20,48 +20,43 @@ public class CheckStockProduct {
 				prd[i].setUnit(scan.nextInt());
 			}
 			System.out.println();
-
 		}
 		line();
 		System.out.println("List of product in 'LOW' status.");
 		line();
 		for (Product PRD : prd) {
-			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("low")) {
-				System.out.println(">> +"+PRD.getId()+" has "+PRD.getUnit()+" units");
-				count++;
+				System.out.println(">> "+PRD.getId()+" has "+PRD.getUnit()+" units");
+				low++;
 			}
-			if(count==0) {
-				System.err.println("There is't any LOW product");
-			}
+		}
+		if(low==0) {
+			System.err.println("There is't any LOW product");
 		}
 		line();
 		System.out.println("List of product in 'NORMAL' status.");
 		line();
 		for (Product PRD : prd) {
-			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("normal")) {
 				System.out.println(">> "+PRD.getId()+" has "+PRD.getUnit()+" units");
-				count++;
+				normal++;
 			}
-			if(count==0) {
-				System.err.println("There is't any NORMAL product");
-			}
+		}
+		if(normal==0) {
+			System.err.println("There is't any NORMAL product");
 		}
 		line();
 		System.out.println("List of product in 'HIGH' status.");
 		line();
 		for (Product PRD : prd) {
-			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("high")) {
-				System.out.println(">> +"+PRD.getId()+" has "+PRD.getUnit()+" units");
-				count++;
-			}
-			if(count==0) {
-				System.err.println("There is't any HIGH product");
+				System.out.println(">> "+PRD.getId()+" has "+PRD.getUnit()+" units");
+				high++;
 			}
 		}
-
+		if(high==0) {
+			System.err.println("There is't any HIGH product");
+		}
 	}
 
 	public static void line() {
