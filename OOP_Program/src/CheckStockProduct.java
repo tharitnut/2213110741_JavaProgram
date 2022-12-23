@@ -26,24 +26,37 @@ public class CheckStockProduct {
 		System.out.println("List of product in \'LOW\' status.");
 		line();
 		for (Product PRD : prd) {
+			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("low")) {
 				System.out.println(">> +"+PRD.getId()+" has "+PRD.getUnit()+" units");
+				count++;
+			}
+			if(count==0) {
+				System.out.println("There is't any LOW product");
 			}
 		}
 		line();
 		System.out.println("List of product in 'NORMAL' status.");
 		line();
 		for (Product PRD : prd) {
+			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("normal")) {
 				System.out.println(">> "+PRD.getId()+" has "+PRD.getUnit()+" units");
+			}
+			if(count==0) {
+				System.out.println("There is't any NORMAL product");
 			}
 		}
 		line();
 		System.out.println("List of product in 'HIGH' status.");
 		line();
 		for (Product PRD : prd) {
+			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("high")) {
 				System.out.println(">> +"+PRD.getId()+" has "+PRD.getUnit()+" units");
+			}
+			if(count==0) {
+				System.out.println("There is't any HIGH product");
 			}
 		}
 

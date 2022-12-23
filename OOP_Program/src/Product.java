@@ -33,15 +33,7 @@ public class Product {
 	}
 	
 	public String chkStatus(int _unit) {
-		if(_unit<5) {
-			return "low";
-		}
-		else if(_unit>=5&&_unit<50) {
-			return "normal";
-		}
-		else{
-			return "high";
-		}
+		return (_unit<5)?"low":(_unit>=5&&_unit<50)?"normal":"high";
 	}
 
 }
