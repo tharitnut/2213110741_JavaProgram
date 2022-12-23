@@ -21,8 +21,8 @@ public class StockProduct {
 		double total = 0;
 		for (Product PRD:prd) {
 			System.out.println("Product ID : "+PRD.getId()+
-				", Total price = "+frm.format((PRD.getPrice()*PRD.getUnit()))+" baht.");
-			total +=PRD.getPrice()*PRD.getUnit();
+				", Total price = "+frm.format(PRD.calculate())+" baht.");
+			total +=PRD.calculate();
 		}
 		line();
 		System.out.println("Total price of all products is "+frm.format(total)+" baht.");
