@@ -23,7 +23,7 @@ public class CheckStockProduct {
 
 		}
 		line();
-		System.out.println("List of product in \'LOW\' status.");
+		System.out.println("List of product in 'LOW' status.");
 		line();
 		for (Product PRD : prd) {
 			int count=0;
@@ -32,7 +32,7 @@ public class CheckStockProduct {
 				count++;
 			}
 			if(count==0) {
-				System.out.println("There is't any LOW product");
+				System.err.println("There is't any LOW product");
 			}
 		}
 		line();
@@ -45,7 +45,7 @@ public class CheckStockProduct {
 				count++;
 			}
 			if(count==0) {
-				System.out.println("There is't any NORMAL product");
+				System.err.println("There is't any NORMAL product");
 			}
 		}
 		line();
@@ -58,7 +58,7 @@ public class CheckStockProduct {
 				count++;
 			}
 			if(count==0) {
-				System.out.println("There is't any HIGH product");
+				System.err.println("There is't any HIGH product");
 			}
 		}
 
