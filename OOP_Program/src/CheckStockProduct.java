@@ -42,6 +42,7 @@ public class CheckStockProduct {
 			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("normal")) {
 				System.out.println(">> "+PRD.getId()+" has "+PRD.getUnit()+" units");
+				count++;
 			}
 			if(count==0) {
 				System.out.println("There is't any NORMAL product");
@@ -54,6 +55,7 @@ public class CheckStockProduct {
 			int count=0;
 			if(PRD.chkStatus(PRD.getUnit()).equalsIgnoreCase("high")) {
 				System.out.println(">> +"+PRD.getId()+" has "+PRD.getUnit()+" units");
+				count++;
 			}
 			if(count==0) {
 				System.out.println("There is't any HIGH product");
