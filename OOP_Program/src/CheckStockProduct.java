@@ -31,7 +31,7 @@ public class CheckStockProduct {
 			}
 		}
 		if(low==0) {
-			System.out.println("There isn't any LOW product");
+			System.out.println(">> There isn't any LOW product");
 		}
 		line();
 		System.out.println("List of product in 'NORMAL' status.");
@@ -43,7 +43,7 @@ public class CheckStockProduct {
 			}
 		}
 		if(normal==0) {
-			System.out.println("There isn't any NORMAL product");
+			System.out.println(">> There isn't any NORMAL product");
 		}
 		line();
 		System.out.println("List of product in 'HIGH' status.");
@@ -55,7 +55,7 @@ public class CheckStockProduct {
 			}
 		}
 		if(high==0) {
-			System.out.println("There isn't any HIGH product");
+			System.out.println(">> There isn't any HIGH product");
 		}
 	}
 
