@@ -19,17 +19,17 @@ public class MovieDemo {
 			System.out.print("Input put director gender, again : ");
 			dGender = scan.next().charAt(0);
 		}
-		Movie mov = new Movie(mId,mName,new Director(dName,dEmail,dGender));
+		Movie mov = new Movie(mId, mName, new Director(dName, dEmail, dGender));
 		System.out.println();
 		System.out.print("Input movie theater no. : ");
 		int tNo = scan.nextInt();
-		while(!(tNo>=1&&tNo<=15)) {
+		while (!(tNo >= 1 && tNo <= 15)) {
 			System.out.print("Please input 1 - 15 only : ");
-			tNo =scan.nextInt();
+			tNo = scan.nextInt();
 		}
-		Theater the = new Theater(mId,mName,new Director(dName,dEmail,dGender),tNo);
+		Theater the = new Theater(mId, mName, new Director(dName, dEmail, dGender), tNo);
 		System.out.println();
-		
+
 		System.out.println(the);
 
 	}
