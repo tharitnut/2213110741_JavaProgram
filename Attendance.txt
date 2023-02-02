@@ -1,5 +1,5 @@
-Date : 19-Jan-2023
+Date : 02-Feb-2023
 StudentID: 2213110741
 FullName: Tharit Ruangphungluang
 AKA : tharitnut
-ClassDetail : Encapsulation
+ClassDetail : Composition, Inheritance, and Polymorphism
